@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+  color: white;
+}
+
+.app {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0 0 15px 0;
+}
+
+.start-card,
+.game-container {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  backdrop-filter: blur(15px);
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 30px
+    rgba(0, 0, 0, 0.3);
+
+  width: fit-content;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+.difficulty {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 15px 0;
+}
+
+.difficulty button {
+  min-width: 95px;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  flex-wrap: wrap;
+}
+
+.stats h3 {
+  background: white;
+
+  color: #111827;
+
+  padding: 8px 14px;
+
+  border-radius: 10px;
+
+  margin: 0;
+
+  font-size: 15px;
+}
+
+.win-message {
+  background: rgba(
+    34,
+    197,
+    94,
+    0.15
+  );
+
+  border: 2px solid
+    #22c55e;
+
+  padding: 12px;
+
+  border-radius: 14px;
+
+  margin-bottom: 15px;
+}
+
+.win-message h2 {
+  margin: 0 0 10px 0;
+}
+.win-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.preview {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  font-size: 40px;
+
+  margin-top: 15px;
+}
